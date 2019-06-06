@@ -6,7 +6,7 @@ variables:
     value: 'containerRegistryConnection' # replace with container registry service connection name established during pipeline creation
   
   - name: imageRepository
-    value: croixbleue68778.azurecr.io/captureorder:ca1
+    value: 'croixbleue68778.azurecr.io/captureorder:ca1'
 
   - name: tag
     value: '$(Build.BuildId)'
