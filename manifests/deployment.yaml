@@ -32,8 +32,10 @@ spec:
               memory: "128Mi"
               cpu: "500m"
           env:
+          - name: CHALLENGEAPPINSIGHTS_KEY
+            value: 817a402b-9848-4474-94cf-21ddd8ddd704
           - name: TEAMNAME
-            value: 'placeholder' # will be patched at deployment time by value of 'teamName' in the variable group
+            value: NakedHeadsAreRecruting
           - name: MONGOHOST
             valueFrom:
               secretKeyRef:
